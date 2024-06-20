@@ -18,7 +18,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   return (
     // <form action={createInvoice}>
     <form action={dispatch}> 
-    {/* chama a ação create invoice ao renderisar o componente -- a ação e uma ação de servidor*/}
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">
@@ -57,9 +56,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             </p>
           ))}
 
-{/* Great, now let's display the errors in your form component. Back in the create-form.tsx component, you can access the errors using the form state.
 
-Add a ternary operator that checks for each specific error. For example, after the customer's field, you can add: */}
       </div>
         </div>
 
@@ -77,8 +74,6 @@ Add a ternary operator that checks for each specific error. For example, after t
                 step="0.01"
                 placeholder="Enter USD amount"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                // required // obriga o usuario a responder evitando um erro futuro
-                //An alternative to client-side validation is server-side validation. Let's see how you can implement it in the next section. For now, delete the required attributes if you added them.
                 aria-describedby="amount-error"
 
               />
@@ -167,26 +162,3 @@ Add a ternary operator that checks for each specific error. For example, after t
     
   );
 }
-// export type State = {
-//   errors?: {
-//     customerId?: string[];
-//     amount?: string[];
-//     status?: string[];
-//   };
-//   message?: string | null;
-// };
-
-{/* <div id="any-error" aria-live="polite" aria-atomic="true">
-{state.message && // existe erro (null ou texto)
-    <p className="mt-2 text-sm text-red-500" >
-      {state.message} // print mensagem
-    </p>
-  } */}
-
-
-  // {state.errors?.amount && // existe erro
-  //   state.errors.amount.map((error: string) => ( // retira a string de carateres
-  //     <p className="mt-2 text-sm text-red-500" key={error}>
-  //       {error}
-  //     </p>
-  //   ))}

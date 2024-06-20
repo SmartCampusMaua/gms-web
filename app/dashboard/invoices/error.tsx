@@ -1,8 +1,6 @@
 'use client';
  //"use client" - error.tsx needs to be a Client Component.
 
-
-
 //  error: This object is an instance of JavaScript's native Error object.
 // reset: This is a function to reset the error boundary. When executed, the function will try to re-render the route segment.
 import { useEffect } from 'react';

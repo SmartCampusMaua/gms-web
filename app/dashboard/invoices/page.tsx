@@ -9,8 +9,6 @@ import { fetchInvoicesPages } from '@/app/lib/data';
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  //But what if you want to add a custom title for a specific page? You can do this by adding a metadata object to the page itself. Metadata in nested pages will override the metadata in the parent. For example, in the /dashboard/invoices page, you can update the page title:
-  // title: 'Invoices | Acme Dashboard',
 
   title: 'Invoices',
 
@@ -47,17 +45,3 @@ export default async function Page({
 }
 
 
-
-
-
-// useSearchParams- Permite acessar os parâmetros da URL atual. Por exemplo, os parâmetros de pesquisa para este URL /dashboard/invoices?page=1&query=pendingseriam assim: {page: '1', query: 'pending'}.
-
-// usePathname- Permite ler o caminho do URL atual. Por exemplo, para a rota /dashboard/invoices, usePathnameretornaria '/dashboard/invoices'.
-
-// useRouter- Permite a navegação entre rotas dentro dos componentes do cliente de forma programática. Existem vários métodos que você pode usar.
-// Aqui está uma rápida visão geral das etapas de implementação:
-
-// Capture a entrada do usuário.
-// Atualize o URL com os parâmetros de pesquisa.
-// Mantenha o URL sincronizado com o campo de entrada.
-// Atualize a tabela para refletir a consulta de pesquisa.
