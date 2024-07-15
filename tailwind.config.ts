@@ -1,32 +1,51 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'selector',
+
   theme: {
     extend: {
-      gridTemplateColumns: {
-        '13': 'repeat(13, minmax(0, 1fr))',
+      fontFamily: {
+        'montserrat': ['"Montserrat"', 'sans-serif'],
+        'outfit': ['Outfit', 'sans-serif']
       },
       colors: {
-        blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
-        },
+        'primary': '#77DD42',
+        'secondary': '#48C477',
+        'tertiary': '#011627'
       },
+      boxShadow: {
+        'inner-light': 'inset 0 0 5px rgba(0,0,0,.2)',
+        'inner-dark': 'inset 0 0 5px rgba(0,0,0,.8)',
+      }
     },
-    keyframes: {
-      shimmer: {
-        '100%': {
-          transform: 'translateX(100%)',
-        },
-      },
-    },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1920px'
+    }
   },
-  plugins: [require('@tailwindcss/forms')],
+
+  plugins: [
+    require('tailwindcss-3d'),
+  ]
 };
 export default config;

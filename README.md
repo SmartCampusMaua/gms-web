@@ -1,39 +1,31 @@
-# Open Data Telemetry - Instituto Mauá de Tecnologia
-baseado em https://nextjs.org/learn
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-Este projeto coleta e disponibiliza dados de sensores do campus do Instituto Mauá de Tecnologia.
-
-## Instalação
-
-Instruções para configurar o ambiente e instalar as dependências necessárias.
+First, run the development server:
 
 ```bash
-# Clone o repositório
-git clone https://github.com/SmartCampusMaua/gms-web.git
+bun i
+bun dev
+```
 
-# Entre no diretório do projeto
-cd gms-web
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Instale as dependências
-npm i
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-# Exportando as variaveis da Database
-export POSTGRES_URL="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_PRISMA_URL="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_URL_NO_SSL="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_URL_NON_POOLING="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_USER="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_HOST="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_PASSWORD="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export POSTGRES_DATABASE="{COLOQUE SUAS INFORMAÇÕES AQUI}"
-export AUTH_SECRET="{COLOQUE SUAS INFORMAÇÕES AQUI}"
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-# Rode o programa 
+## Learn More
 
-npm run dev
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-# Autenticação
-Email: user@nextmail.com
-Password: 123456
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
