@@ -3,13 +3,20 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
+  const router = useRouter();
+  
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+  const loginUrl = `${apiBaseUrl}/auth/login`;
+
   const [loading, setLoading] = useState(false);
 
   const handleMicrosoftLogin = async () => {
     setLoading(true);
-    //await authHandlers.loginWithMicrosoft(setLoading);
+    router.push(loginUrl)
     setLoading(false);
   };
 
