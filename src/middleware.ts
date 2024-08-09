@@ -30,5 +30,5 @@ export async function middleware(request: NextRequest) {
 
 // Define as rotas ou padrões de URL que o middleware deve aplicar
 export const config = {
-  matcher: ['/', '/reservatorios', '/saidas-de-agua', '/poco', '/luzes'], // Adapte para as suas rotas protegidas
+  matcher: ['/', '/reservatorios', '/saidas-de-agua', '/poco', '/luzes', '/configuracoes'], // Adapte para as suas rotas protegidas
 };
