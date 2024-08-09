@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import {useState} from 'react';
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 const Layout = ({children}) => {
     const pathname = usePathname();
@@ -12,6 +12,16 @@ const Layout = ({children}) => {
         setDarkMode(!darkMode);
         // Implement your dark mode logic here
     };
+
+    const router = useRouter();
+
+    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+    const logoutUrl = `${apiBaseUrl}/auth/logout`;
+
+    const handleMicrosoftLogout = async () => {
+        router.push(logoutUrl)
+      };
 
     return (
         <>
@@ -66,8 +76,7 @@ const Layout = ({children}) => {
                         <p className="font-medium text-neutral-900 dark:text-neutral-100">Display Name</p>
                         <button
                             className="rounded-full bg-neutral-200 p-1.5 transition duration-150 ease-in hover:bg-neutral-300 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
-                            onClick={() => {/* Implement logout functionality */
-                            }}
+                            onClick={handleMicrosoftLogout}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                 <path
@@ -192,9 +201,9 @@ const Layout = ({children}) => {
                     <p className="dark:text-white">Tem certeza que deseja sair?</p>
                     <div className="mt-4 flex justify-center">
                         <button
-                            className="rounded-full bg-neutral-200 px-3 py-1.5 text-[0.825rem] tracking-wider transition duration-150 ease-in hover:bg-neutral-300 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
-                            >SAIR</button
-                        >
+                            className="rounded-full bg-neutral-200 px-3 py-1.5 text-[0.825rem] tracking-wider transition duration-150 ease-in hover:bg-neutral-300 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"                    
+                            >SAIR
+                        </button>
                     </div>
                 </div>
             </dialog>
