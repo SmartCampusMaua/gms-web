@@ -40,7 +40,7 @@ export default function Page() {
                           onClick={handleMicrosoftLogin}
                       >
                         <span className="text-center text-[0.825rem] uppercase tracking-wider">ENTRAR COM</span>
-                        <Image className="h-[1.3rem]" src="/images/Microsoft_365.svg" alt="" width={21} height={21} />
+                        <Image src="/images/Microsoft_365.svg" alt="Microsoft" width={100} height={100} />
                       </button>
                     </div>
                   </>
