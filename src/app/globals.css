@@ -214,3 +214,104 @@
 .animate-waterfall-particle-5 {
   animation: waterfall-particle-5 0.4s 1s infinite linear;
 }
+
+.lampada {
+  box-shadow:
+          0 0 0 10px #ffe770,
+          0 0 300px 10px #ffcd00;
+  animation: glow 4s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.water {
+  animation: ripple 2.5s infinite linear;
+}
+
+.water-droplet {
+  animation: ripple-droplet 2.5s infinite linear;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-97%, 0, 0);
+  }
+}
+
+@keyframes ripple-droplet {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-105%, 0, 0);
+  }
+}
+
+@keyframes water-current {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes water-current-particle {
+  to {
+    left: 21rem;
+  }
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+@keyframes waterfall-particle {
+  to {
+    left: 19rem;
+  }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+.animate-current-particle-1 {
+  animation: water-current-particle 1.7s 1s infinite;
+}
+.animate-current-particle-2 {
+  animation: water-current-particle 1.7s 1.5s infinite;
+}
+.animate-current-particle-3 {
+  animation: water-current-particle 1.7s 2s infinite;
+}
+
+.animate-waterfall-particle-1 {
+  animation: waterfall-particle 0.5s 1s infinite linear;
+}
+.animate-waterfall-particle-2 {
+  animation: waterfall-particle 0.5s 1.2s infinite linear;
+}
+.animate-waterfall-particle-3 {
+  animation: waterfall-particle 0.5s 1.1s infinite linear;
+}
+.animate-waterfall-particle-4 {
+  animation: waterfall-particle 0.5s 1.3s infinite linear;
+}

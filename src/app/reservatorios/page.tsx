@@ -1,3 +1,5 @@
+"use client";
+
 import Head from 'next/head';
 import DashboardLayout from "@/app/components/DashboardLayout";
 
@@ -15,7 +17,6 @@ const Reservatorios = () => {
             volume: 300,
             height: 8,
         },
-        // Add more static reservatories as needed
     ];
     const measureUnit = 'L';
     const dangerValue = 300;
@@ -24,7 +25,7 @@ const Reservatorios = () => {
         <DashboardLayout>
             <div>
                 <Head>
-                    <title>Reservatórios</title>
+                    <title>Reservatórios | EcoVision GMS</title>
                 </Head>
 
                 <div className="sticky top-0 z-40 w-full bg-neutral-50/30 p-8 backdrop-blur-sm dark:bg-[#121212]/30">

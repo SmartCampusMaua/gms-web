@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ed29108-b5f4-47eb-9350-59d8711d583c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/Microsoft_365.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo_filled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo_negative.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/amy-burns.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/balazs-orban.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/delba-de-oliveira.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/emil-kowalski.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/evil-rabbit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/guillermo-rauch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/hector-simpson.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/jared-palmer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/lee-robinson.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/michael-novotny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/steph-dietz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/customers/steven-tey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hero-desktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hero-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/configuracoes/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/configuracoes/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/luzes/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/luzes/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/poco/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poco/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2j9YO0iTQl3vpfpA4ozb01AKxZb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/enric/Documents/GitHub/professorbossini_api_livros&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\enric\\Documents\\GitHub\\gms-web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enric\Documents\GitHub\gms-web\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\enric\Documents\GitHub\gms-web\src\app" />
+      <recent name="C:\Users\enric\Documents\GitHub\gms-web\src\app\dashboard" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ed29108-b5f4-47eb-9350-59d8711d583c" name="Changes" comment="" />
+      <created>1720800723477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720800723477</updated>
+      <workItem from="1720800724856" duration="879000" />
+      <workItem from="1720802452651" duration="5388000" />
+      <workItem from="1720995357241" duration="10734000" />
+      <workItem from="1721258120745" duration="64000" />
+      <workItem from="1722226432375" duration="683000" />
+      <workItem from="1722286883900" duration="593000" />
+      <workItem from="1722571330729" duration="4049000" />
+      <workItem from="1723012724304" duration="608000" />
+      <workItem from="1723504811404" duration="1803000" />
+      <workItem from="1723518417748" duration="7264000" />
+      <workItem from="1723680500104" duration="300000" />
+      <workItem from="1723689650261" duration="2581000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/components/DashboardLayout.jsx</url>
+          <line>98</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/reservatorios/page.tsx</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
