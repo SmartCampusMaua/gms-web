@@ -1,12 +1,13 @@
 "use client";
 
 import Head from 'next/head';
-import {useState} from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation'
 
 const Layout = ({children}) => {
     const pathname = usePathname();
     const [darkMode, setDarkMode] = useState(false); // Example state for dark mode
+    const [displayName, setDisplayName] = useState("Carregando..."); // Estado para o nome de exibição
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -21,7 +22,25 @@ const Layout = ({children}) => {
 
     const handleMicrosoftLogout = async () => {
         router.push(logoutUrl)
-      };
+    };
+
+    useEffect(() => {
+        const fetchDisplayName = async () => {
+          try {
+            const response = await fetch(`${apiBaseUrl}/auth/displayname`);
+            if (!response.ok) {
+              throw new Error('Erro ao obter o nome de exibição');
+            }
+            const data = await response.json();
+            setDisplayName(data.displayName || "Nome não disponível"); // Atualiza o estado com o nome de exibição
+          } catch (error) {
+            console.error(error);
+            setDisplayName("Erro ao carregar nome"); // Define um estado de erro se a chamada falhar
+          }
+        };
+    
+        fetchDisplayName(); // Chama a função para buscar o nome de exibição
+    }, [apiBaseUrl]); // O efeito depende da URL da API
 
     return (
         <>
@@ -42,7 +61,6 @@ const Layout = ({children}) => {
                             </div>
                             <p className="font-outfit text-2xl font-medium text-primary">
                                 Eco<span className="text-tertiary dark:text-white">Vision</span>
-                                {/* Example conditional rendering */}
                                 {true && (
                                     <span
                                         className="ml-1.5 font-outfit text-xl font-normal text-tertiary dark:text-white">
@@ -72,8 +90,7 @@ const Layout = ({children}) => {
                         </div>
                     </div>
                     <div className="flex items-center space-x-3">
-                        {/* Example dynamic display name */}
-                        <p className="font-medium text-neutral-900 dark:text-neutral-100">Display Name</p>
+                        <p className="font-medium text-neutral-900 dark:text-neutral-100">{displayName}</p>
                         <button
                             className="rounded-full bg-neutral-200 p-1.5 transition duration-150 ease-in hover:bg-neutral-300 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
                             onClick={handleMicrosoftLogout}
