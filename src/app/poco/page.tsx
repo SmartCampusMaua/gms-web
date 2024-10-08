@@ -157,7 +157,7 @@ const Poco = () => {
                             <div
                                 className="absolute flex size-full items-center justify-center bg-white/50 backdrop-blur-[3px] dark:bg-black/50"
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 264 264">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 264 264">
                                     {/* the droplet mask for the bar */}
                                     <clipPath id="mask_shape">
                                         <path
