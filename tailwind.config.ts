@@ -43,9 +43,5 @@ const config: Config = {
       '3xl': '1920px'
     }
   },
-
-  plugins: [
-    require('tailwindcss-3d'),
-  ]
 };
 export default config;

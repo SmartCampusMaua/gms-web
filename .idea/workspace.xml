@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed29108-b5f4-47eb-9350-59d8711d583c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poco/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poco/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/DashboardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/DashboardLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/enric/Documents/GitHub/professorbossini_api_livros&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -70,6 +72,13 @@
       <recent name="C:\Users\enric\Documents\GitHub\gms-web\src\app\dashboard" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,6 +99,12 @@
       <workItem from="1723518417748" duration="7264000" />
       <workItem from="1723680500104" duration="300000" />
       <workItem from="1723689650261" duration="5510000" />
+      <workItem from="1729215381577" duration="582000" />
+      <workItem from="1729217081811" duration="1015000" />
+      <workItem from="1729221774285" duration="4802000" />
+      <workItem from="1729263788314" duration="11000" />
+      <workItem from="1729529438656" duration="1754000" />
+      <workItem from="1729644282383" duration="5689000" />
     </task>
     <servers />
   </component>
@@ -104,13 +119,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/components/DashboardLayout.jsx</url>
-          <line>98</line>
+          <line>115</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/reservatorios/page.tsx</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
