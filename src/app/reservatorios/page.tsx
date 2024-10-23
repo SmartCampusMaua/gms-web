@@ -21,6 +21,12 @@ const Reservatorios = () => {
     const measureUnit = 'L';
     const dangerValue = 300;
 
+    const modal : HTMLDialogElement | null = document.getElementById('ModalCadastroReservatorio');
+
+    function openModal(){
+        modal!.showModal();
+    }
+
     return (
         <DashboardLayout>
             <div>
@@ -70,6 +76,9 @@ const Reservatorios = () => {
                                 <button className={`w-12 py-0.5 text-sm font-medium water-button-unpressed`}>m³</button>
                             </div>
                         </div>
+                        <div>
+                            <button onClick={openModal}>Adicionar Reservatório</button>
+                        </div>
                     </div>
                 </div>
 
@@ -97,7 +106,7 @@ const Reservatorios = () => {
                                 className={`absolute bottom-2 right-3 text-right dark:shadow-black dark:drop-shadow-2xl ${reservatory.data_counter <= dangerValue ? 'text-red' : 'text-cyan'}`}
                             >
                                 <h1 className="text-3xl font-semibold">
-                                    {Number(reservatory.data_counter).toFixed(2)}<span className="text-base font-medium opacity-75">/{Number(reservatory.volume).toFixed(2)}{measureUnit}</span>
+                                    {Number(reservatory.data_counter).toFixed(1)}<span className="text-base font-medium opacity-75">/{Number(reservatory.volume).toFixed(1)}{measureUnit}</span>
                                 </h1>
                                 <p className="text-sm font-medium">{reservatory.name}</p>
                             </div>
@@ -136,6 +145,11 @@ const Reservatorios = () => {
                     ))}
                 </div>
             </div>
+            <dialog className='rounded-xl p-8 bg-white dark:bg-neutral-800' open id='ModalCadastroReservatorio'>
+                <div className=''>
+                    adfadsfasdasd
+                </div>
+            </dialog>
         </DashboardLayout>
 
     );

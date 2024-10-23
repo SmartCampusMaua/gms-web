@@ -52,7 +52,7 @@ const Layout = ({children}) => {
             </Head>
             <nav
                 className={`fixed top-0 z-50 w-full border-b border-neutral-300 bg-white ${darkMode ? 'dark:border-neutral-700 dark:bg-neutral-900' : 'dark:bg-neutral-700'}`}>
-                <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6">
+                <div className="mx-auto flex h-14 max-w-7xl 2xl:max-w-[120rem] items-center justify-between px-6">
                     <div className="flex space-x-8 items-center">
                         <div className="flex items-center space-x-2">
                             <div>
