@@ -18,12 +18,7 @@ export async function middleware(request: NextRequest) {
   
   const { isAuthenticated } = await response.json();
 
-  if (isAuthenticated) {
-    // Se estiver autenticado, permita o acesso
-    if (request.nextUrl.pathname.endsWith('/')) {
-        return NextResponse.redirect(new URL('/gms/reservatorios', request.url))
-    }
-  } else {
+  if (!isAuthenticated) {
     return NextResponse.redirect(new URL(`${process.env.SMARTCAMPUSMAUA_WEB_URL}:${process.env.SMARTCAMPUSMAUA_WEB_PORT}`, request.url))
   }
 }
