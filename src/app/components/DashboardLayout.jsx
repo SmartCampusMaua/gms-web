@@ -16,18 +16,14 @@ const Layout = ({children}) => {
 
     const router = useRouter();
 
-    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-
-    const logoutUrl = `${apiBaseUrl}/auth/logout`;
-
     const handleMicrosoftLogout = async () => {
-        router.push(logoutUrl)
+        router.push(`${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_URL}:${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_PORT}/auth/logout`)
     };
 
     useEffect(() => {
         const fetchDisplayName = async () => {
           try {
-            const response = await fetch(`${apiBaseUrl}/auth/displayname`);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_URL}:${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_PORT}/auth/displayname`);
             if (!response.ok) {
               throw new Error('Erro ao obter o nome de exibição');
             }
@@ -40,7 +36,7 @@ const Layout = ({children}) => {
         };
     
         fetchDisplayName(); // Chama a função para buscar o nome de exibição
-    }, [apiBaseUrl]); // O efeito depende da URL da API
+    }, [`${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_URL}:${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_PORT}/auth/displayname`]); // O efeito depende da URL da API
 
     return (
         <>
@@ -56,8 +52,6 @@ const Layout = ({children}) => {
                     <div className="flex space-x-8 items-center">
                         <div className="flex items-center space-x-2">
                             <div>
-                                <img className="h-8 dark:hidden" src="/images/logo.svg" alt="EcoVision"/>
-                                <img className="hidden h-8 dark:block" src="/images/logo_negative.svg" alt="EcoVision"/>
                                 <img className="h-8 dark:hidden" src="images/logo.svg" alt="EcoVision"/>
                                 <img className="hidden h-8 dark:block" src="images/logo_negative.svg" alt="EcoVision"/>
                             </div>
@@ -120,7 +114,6 @@ const Layout = ({children}) => {
                             <div className="mt-4 flex flex-col space-y-3">
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/reservatorios/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
-                                    href="/reservatorios"
                                     href="/gms/reservatorios"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -149,7 +142,6 @@ const Layout = ({children}) => {
                                 >
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/saidas-de-agua/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
-                                    href="/saidas-de-agua"
                                     href="/gms/saidas-de-agua"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"
@@ -164,7 +156,6 @@ const Layout = ({children}) => {
                                 >
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/poco/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
-                                    href="/poco"
                                     href="/gms/poco"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -182,7 +173,6 @@ const Layout = ({children}) => {
                             <div className="mt-4 flex flex-col space-y-3">
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/luzes/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
-                                    href="/luzes"
                                     href="/gms/luzes"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -200,7 +190,6 @@ const Layout = ({children}) => {
                         <div>
                             <a
                                 className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/configuracoes/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
-                                href="/configuracoes"
                                 href="/gms/configuracoes"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
