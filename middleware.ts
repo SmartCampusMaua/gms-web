@@ -11,7 +11,7 @@ export async function middleware(request: NextRequest) {
   const sessionCookie = request.cookies.get('_session')!.toString();
 
   if (!sessionCookie) {
-    return NextResponse.redirect(new URL('/', request.url));
+    return NextResponse.redirect(new URL(`${process.env.SMARTCAMPUSMAUA_WEB_URL}:${process.env.SMARTCAMPUSMAUA_WEB_PORT}`, request.url));
   }
 
   try {
@@ -20,7 +20,7 @@ export async function middleware(request: NextRequest) {
 
     if (error || !data) {
       console.error('Error verifying session cookie:', error);
-      return NextResponse.redirect(new URL('/', request.url));
+      return NextResponse.redirect(new URL(`${process.env.SMARTCAMPUSMAUA_WEB_URL}:${process.env.SMARTCAMPUSMAUA_WEB_PORT}`, request.url));
     }
 
     // Attach the user data to the request
@@ -30,6 +30,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   } catch (e) {
     console.error('Unexpected error verifying session cookie:', e);
-    return NextResponse.redirect(new URL('/', request.url));
+    return NextResponse.redirect(new URL(`${process.env.SMARTCAMPUSMAUA_WEB_URL}:${process.env.SMARTCAMPUSMAUA_WEB_PORT}`, request.url));
   }
 }

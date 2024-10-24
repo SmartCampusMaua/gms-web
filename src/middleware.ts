@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Defina a URL da API do NestJS que verifica o estado da sessão
-const CHECK_SESSION_URL = process.env.NEXT_PUBLIC_API_BASE_URL + '/auth/check-session';
+const CHECK_SESSION_URL = `${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_URL}:${process.env.NEXT_PUBLIC_SMARTCAMPUSMAUA_SERVER_PORT}/auth/check-session`;
+
+console.log(CHECK_SESSION_URL)
 
 export async function middleware(request: NextRequest) {
   // Obtém o cookie da requisição
@@ -19,13 +21,10 @@ export async function middleware(request: NextRequest) {
   if (isAuthenticated) {
     // Se estiver autenticado, permita o acesso
     if (request.nextUrl.pathname.endsWith('/')) {
-        return NextResponse.redirect(new URL('/reservatorios', request.url))
         return NextResponse.redirect(new URL('/gms/reservatorios', request.url))
     }
   } else {
-    if (!request.nextUrl.pathname.endsWith('/')) {
-        return NextResponse.redirect(new URL('/', request.url))
-    }
+    return NextResponse.redirect(new URL(`${process.env.SMARTCAMPUSMAUA_WEB_URL}:${process.env.SMARTCAMPUSMAUA_WEB_PORT}`, request.url))
   }
 }
 
