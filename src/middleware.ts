@@ -20,6 +20,7 @@ export async function middleware(request: NextRequest) {
     // Se estiver autenticado, permita o acesso
     if (request.nextUrl.pathname.endsWith('/')) {
         return NextResponse.redirect(new URL('/reservatorios', request.url))
+        return NextResponse.redirect(new URL('/gms/reservatorios', request.url))
     }
   } else {
     if (!request.nextUrl.pathname.endsWith('/')) {

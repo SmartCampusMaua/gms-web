@@ -58,6 +58,8 @@ const Layout = ({children}) => {
                             <div>
                                 <img className="h-8 dark:hidden" src="/images/logo.svg" alt="EcoVision"/>
                                 <img className="hidden h-8 dark:block" src="/images/logo_negative.svg" alt="EcoVision"/>
+                                <img className="h-8 dark:hidden" src="images/logo.svg" alt="EcoVision"/>
+                                <img className="hidden h-8 dark:block" src="images/logo_negative.svg" alt="EcoVision"/>
                             </div>
                             <p className="font-outfit text-2xl font-medium text-primary">
                                 Eco<span className="text-tertiary dark:text-white">Vision</span>
@@ -119,6 +121,7 @@ const Layout = ({children}) => {
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/reservatorios/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
                                     href="/reservatorios"
+                                    href="/gms/reservatorios"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     >
@@ -147,6 +150,7 @@ const Layout = ({children}) => {
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/saidas-de-agua/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
                                     href="/saidas-de-agua"
+                                    href="/gms/saidas-de-agua"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"
                                     >
@@ -161,6 +165,7 @@ const Layout = ({children}) => {
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/poco/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
                                     href="/poco"
+                                    href="/gms/poco"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     >
@@ -178,6 +183,7 @@ const Layout = ({children}) => {
                                 <a
                                     className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/luzes/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
                                     href="/luzes"
+                                    href="/gms/luzes"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     >
@@ -195,6 +201,7 @@ const Layout = ({children}) => {
                             <a
                                 className={`flex items-center space-x-2 text-nowrap rounded-full px-3 py-2.5 text-[0.825rem] tracking-wide transition ${pathname.match(/configuracoes/g) ? 'water-button-pressed' : 'water-button-unpressed'}`}
                                 href="/configuracoes"
+                                href="/gms/configuracoes"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 >
