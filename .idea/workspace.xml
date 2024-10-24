@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed29108-b5f4-47eb-9350-59d8711d583c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/fonts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/DashboardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/DashboardLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reservatorios/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,10 +104,7 @@
       <workItem from="1729221774285" duration="4802000" />
       <workItem from="1729263788314" duration="11000" />
       <workItem from="1729529438656" duration="1754000" />
-      <workItem from="1729644282383" duration="7804000" />
-      <workItem from="1729732426490" duration="2722000" />
-      <workItem from="1729743189489" duration="198000" />
-      <workItem from="1729743420551" duration="1056000" />
+      <workItem from="1729644282383" duration="5689000" />
     </task>
     <servers />
   </component>
@@ -120,7 +119,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/components/DashboardLayout.jsx</url>
-          <line>111</line>
+          <line>115</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
